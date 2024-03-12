@@ -1,0 +1,38 @@
+
+<header>
+
+  <div class="sidebar">
+    <div class="logo">
+      <ul class="main">
+        <li>
+          <a (click)="redirectToDashboard()">
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a (click)="redirectToProjects()">
+            Proyectos
+          </a>
+        </li>
+        <li>
+          <a (click)="redirectToUsers()">
+            Usuarios
+          </a>
+        </li>
+        <li>
+          <a>
+            Roles
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="buttonLogOut" >
+    <button (click)="logout()" class="btn btn-create">
+      log out
+    </button>
+  </div>
+
+</header>
+    

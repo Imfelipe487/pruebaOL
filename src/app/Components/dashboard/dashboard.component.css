@@ -1,0 +1,77 @@
+.content-data {
+  height: 9rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 19.2rem;
+}
+
+picture {
+  max-width: 38rem;
+  max-height: 19rem;
+  padding-right: 200px;
+}
+
+.img-city {
+  width: 100%;
+  height: 100%;
+}
+
+.project-content {
+  gap: 1rem;
+}
+
+.project-1 {
+  background: #9be0f4;
+}
+
+.project-2 {
+  background: #c5ebaa;
+}
+
+.project-3 {
+  background: #f281ff;
+}
+
+.project-4 {
+  background: #ff9843;
+}
+
+.tlt-report {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.description-panel {
+  text-align: left;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.content-dashboard {
+  margin-top: 10rem;
+}
+
+.report-commits {
+  background: #fff;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-radius: 20px;
+}
+
+.title-content-commits {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.title-content-delivery {
+  font-size: 2rem;
+  padding: 1rem 0;
+  font-weight: 900;
+  color: #0277ff;
+}
+
+
+
+  

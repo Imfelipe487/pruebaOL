@@ -1,0 +1,100 @@
+<app-header></app-header>
+<div class="container content-dashboard">
+  <h2 class="title-dasboard">Bienvenido</h2>
+
+  <p class="subtitle-dashboard">
+    Verifica tus alertas, posees {{ notification.length }} alertas sub Leer!
+  </p>
+
+  <div class="row row-cols-2">
+    <div class="col">
+      <picture>
+        <img
+          src="../../../assets/img/icon.png"
+          alt="world img"
+          class="img-city"
+        />
+      </picture>
+    </div>
+    <div class="col">
+      <div class="container text-center">
+        <div class="row row-cols-2 project-content">
+          <div class="col content-data project-1">
+            <div class="d-flex flex-column description-panel">
+              <p class="title">Proyectos Registrados</p>
+              <p class="number">{{ totalProjectDeploy }}</p>
+              <p class="description">Ultimo proyecto registrado hace 15 dias</p>
+            </div>
+          </div>
+          <div class="col content-data project-2">
+            <div class="d-flex flex-column description-panel">
+              <p class="title">Proyectos en Desarrollo</p>
+              <p class="number">{{ projectsInDeploy }}</p>
+              <p class="description">Total de avance 22.00%</p>
+            </div>
+          </div>
+          <div class="col content-data project-3">
+            <div class="d-flex flex-column description-panel">
+              <p class="title">NC's sin resolver</p>
+              <p class="number">{{ totalNcs }}</p>
+              <p class="description">Ultima NC registrada hace 1 dia</p>
+            </div>
+          </div>
+          <div class="col content-data project-4">
+            <div class="d-flex flex-column description-panel">
+              <p class="title">Cantidad de Errores</p>
+              <p class="number">{{ totalErrors }}</p>
+              <p class="description">Ultima error hace 2 horas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="report-commits">
+        <h5 class="title-content-commits">Reportes De Commits</h5>
+
+        <p class="subtitle-content-commits">
+          Todas de commits realizados por cada mes diferenciando entre los tags
+          de Ajustes(fix) y Caractereisticas(feat)
+        </p>
+
+        <div class="container text-center">
+          <div class="row row-cols-2 my-4 w-75">
+            <div class="col mb-2 tlt-report">Tiempo de Uso</div>
+            <div class="col">{{ timeUsed }}%</div>
+            <div class="col mb-2 tlt-report">Proyectos Desplegados</div>
+            <div class="col">{{ projectsInDeploy }}</div>
+          </div>
+        </div>
+
+        <canvas id="linechart"></canvas>
+      </div>
+    </div>
+    <div class="col">
+      <div class="report-commits">
+        <h5 class="title-content-commits">Detalles Del Servidor</h5>
+
+        <p class="subtitle-content-commits">
+          The total number of sessions within the date range. It is the period
+          time a user is at actively engaged with your website, page or app etc.
+        </p>
+
+        <canvas id="piechart"></canvas>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="report-commits">
+        <h5 class="title-content-commits">Entregas</h5>
+        <h6 class="title-content-delivery">%{{ dataPercentage }}</h6>
+        <p class="subtitle-content-commits">
+          <strong> Proximo Ciclo: {{ dataCycleDate }} </strong> El ciclo de
+          entrega se calcula usando las fechas, estimadas de los Sptrints en
+          cada proyecto
+        </p>
+
+        <canvas id="reportChart"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
